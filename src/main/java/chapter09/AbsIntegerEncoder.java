@@ -10,9 +10,9 @@ public class AbsIntegerEncoder extends MessageToMessageEncoder<ByteBuf> {
 
     @Override
     protected void encode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {
-
         while (byteBuf.readableBytes() >= 4) {
             int value = Math.abs(byteBuf.readInt());
+            System.out.println("[AbsIntegerEncoder] encode : " + value);
             list.add(value);
         }
     }
