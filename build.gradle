@@ -13,6 +13,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation group: 'io.netty', name: 'netty-all', version: '4.1.24.Final'
+    implementation group: 'com.google.protobuf', name: 'protobuf-java', version: '3.25.3'
 
 }
 
